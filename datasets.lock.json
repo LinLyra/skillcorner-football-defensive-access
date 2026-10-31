@@ -1,0 +1,13 @@
+{
+  "dataset": "SkillCorner Open Data — Australia A-League 2024/25",
+  "upstream": "https://github.com/SkillCorner/opendata",
+  "commit": "4340d274572876239c154c90bc507a9b3250a656",
+  "sample_game": 1874553,
+  "tracking": {
+    "path": "data/matches/1874553/1874553_tracking_extrapolated.jsonl",
+    "bytes": 90729279,
+    "sha256": "ea97f58f8eaad925feaeacc6395ec24860dd80027af8a89450276adebd29d265"
+  },
+  "note": "Raw competition data is not redistributed."
+}
+

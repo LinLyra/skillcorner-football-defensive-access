@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Defensive Access: Counterfactual Valuation of Football Defensive Positioning"
+message: "Please cite this software and the upstream SkillCorner dataset."
+type: software
+authors:
+  - name: "Lyra"
+version: 0.1.0
+date-released: 2026-10-30
+license: MIT
+
