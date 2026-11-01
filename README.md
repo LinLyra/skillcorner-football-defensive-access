@@ -48,6 +48,12 @@ The defensively relevant extension weights available options by forward progress
 
 ![Auditable local positioning counterfactual](reports/figures/positioning_counterfactual.png)
 
+### One decision, reconstructed
+
+The animation below replays a strictly pre-pass choice set. `T` is transparent destination threat, `Access` is the lane-aware geometry score, and the star marks the receiver actually selected. It is a decision audit—not a claim that the highest-threat option should always be chosen.
+
+![Animated pre-pass receiver choice set](reports/media/pre_pass_choice_set.gif)
+
 ## Reproduce
 
 Python 3.10+ is required. Competition data is not redistributed.

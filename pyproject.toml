@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6"]
+dev = ["pytest>=8", "ruff>=0.6", "Pillow>=10"]
 
 [project.scripts]
 defensive-access = "defensive_access.cli:main"

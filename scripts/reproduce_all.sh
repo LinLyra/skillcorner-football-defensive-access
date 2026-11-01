@@ -33,5 +33,6 @@ PYTHONPATH=src:scripts python scripts/run_secondary_holdout.py
 PYTHONPATH=src python scripts/run_threat_validation.py
 PYTHONPATH=src:scripts python scripts/run_positioning_counterfactual.py
 PYTHONPATH=src:scripts python scripts/make_submission_figures.py
+PYTHONPATH=src python scripts/animate_choice_set.py
 
-echo "Reproduction complete. See outputs/, reports/, and reports/figures/."
+echo "Reproduction complete. See outputs/, reports/, reports/figures/, and reports/media/."
