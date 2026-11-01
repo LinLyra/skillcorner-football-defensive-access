@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 
-
 FEATURE_SETS = {
     "B0": ["nearest_defender_m"],
     "B1": [
@@ -77,7 +76,7 @@ class ConditionalSoftmax:
     scale_: np.ndarray | None = None
     coef_: np.ndarray | None = None
 
-    def fit(self, x: np.ndarray, y: np.ndarray, keys: np.ndarray) -> "ConditionalSoftmax":
+    def fit(self, x: np.ndarray, y: np.ndarray, keys: np.ndarray) -> ConditionalSoftmax:
         x = np.asarray(x, dtype=float)
         y = np.asarray(y, dtype=int)
         self.mean_ = x.mean(axis=0)

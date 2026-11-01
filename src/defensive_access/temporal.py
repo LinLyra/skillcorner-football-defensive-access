@@ -4,7 +4,6 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-
 DEFAULT_STATES = ("high_press", "mid_block", "low_block", "transition")
 
 

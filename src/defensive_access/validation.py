@@ -6,7 +6,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-
 SUCCESS_COLUMNS = (
     "stop_possession_danger",
     "reduce_possession_danger",
@@ -139,7 +138,7 @@ def validation_summary(aligned: pd.DataFrame) -> dict:
     contribution_auc = roc_auc(y, aligned["contribution"].to_numpy())
     proximity_auc = roc_auc(y, -aligned["distance_to_ball_m"].to_numpy())
     return {
-        "aligned_events": int(len(aligned)),
+        "aligned_events": len(aligned),
         "successful_events": int(y.sum()),
         "success_rate": float(y.mean()),
         "contribution_auc": None if math.isnan(contribution_auc) else contribution_auc,
@@ -161,7 +160,7 @@ def passing_option_summary(aligned: pd.DataFrame) -> dict:
     access_auc = roc_auc(y, aligned["access_probability"].to_numpy())
     distance_auc = roc_auc(y, aligned["nearest_defender_m"].to_numpy())
     return {
-        "aligned_passing_options": int(len(aligned)),
+        "aligned_passing_options": len(aligned),
         "received_options": int(y.sum()),
         "received_rate": float(y.mean()),
         "access_auc": None if math.isnan(access_auc) else access_auc,
